@@ -17,7 +17,19 @@
 </head>
 
 <body>
-    <h1>Let's Build a Site Using <span class="teal-text">Materialize</span></h1>
+    <nav class="blue darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">Madmin</a>
+                <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="index.html">Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
     <!-- Scripts -->
@@ -29,7 +41,8 @@
     <script>
         $(document).ready(function () {
             // Custom and Init JQueries
-
+            // Init SideNav
+            $('.button-collapse').sideNav();
         });
     </script>
 </body>

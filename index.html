@@ -16,7 +16,7 @@
     <title>Madmin</title>
 </head>
 
-<body>
+<body class="grey lighten-4">
     <nav class="blue darken-2">
         <div class="container">
             <div class="nav-wrapper">
@@ -157,8 +157,76 @@
             </div>
         </div>
     </section>
-    <!-- Section: Recent posts -->
-
+    <!-- Section: Recent posts and To do -->
+    <section class="section section-">
+        <div class="row">
+            <div class="col s12 l8 m6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Recent Posts</span>
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Post One</td>
+                                    <td>Web Development</td>
+                                    <td>
+                                        <a href="details.html" class="btn blue lighten-2">Details</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Post Two</td>
+                                    <td>Graphic Design</td>
+                                    <td>
+                                        <a href="details.html" class="btn blue lighten-2">Details</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Post three</td>
+                                    <td>Web Development</td>
+                                    <td>
+                                        <a href="details.html" class="btn blue lighten-2">Details</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Quick Todos</span>
+                        <form id="todo-form">
+                            <div class="input-field">
+                                <input type="text" id="todo" placeholder="Add todo...">
+                            </div>
+                        </form>
+                        <ul class="collection todos">
+                            <li class="collection-item">
+                                <div class="">Todo One <a href="#!" class="secondary-content delete"><i
+                                            class="material-icons">close</i></a></div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="">Todo Two <a href="#!" class="secondary-content delete"><i
+                                            class="material-icons">close</i></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="section blue darken-2 white-text center">
+        <p>Madmin Corp Copyright &copy; 2019</p>
+    </footer>
 
     <!-- Preloader need to be fixed-->
     <div class="loader preloader-wrapper big active">
@@ -221,8 +289,26 @@
                     Materialize.toast('Comment Denied', 3000);
                     e.preventDefault();
                 })
+                // Quick todo
+                $('#todo-form').submit(function (e) {
+                    const output = `<li class="collection-item">
+                        <div>${$('#todo').val()}
+                            <a href="#!" class="secondary-content delete">
+                                <i class="material-icons">close</i>
+                            </a>
+                        </div>
+                    </li>`;
+                    $('.todos').append(output);
+                    Materialize.toast('Todo added', 3000)
+                    e.preventDefault();
+                });
+                // Delete todos
+                $('.todos').on('click', '.delete', function (e) {
+                    $(this).parent().parent().remove();
+                    Materialize.toast('Todo Removed', 3000)
+                    e.preventDefault();
+                });
             });
-
         }, 1200)
     </script>
 </body>

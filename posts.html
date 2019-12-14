@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google font and Icons -->
+    <link rel="stylesheet" href="node_modules/material-icons/iconfont/material-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Madmin</title>
+</head>
+
+<body class="grey lighten-4">
+    <nav class="blue darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">Madmin</a>
+                <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li class=""><a href="index.html">Dashboard</a></li>
+                    <li class="active"><a href="posts.html">Posts</a></li>
+                    <li class=""><a href="catagories.html">Categories</a></li>
+                    <li class=""><a href="comments.html">Comments</a></li>
+                    <li class=""><a href="users.html">Users</a></li>
+                </ul>
+                <!-- side nav -->
+                <ul id="side-nav" class="side-nav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img class="" src="img/ocean.jpg" alt="">
+                            </div>
+                            <a href="#">
+                                <img src="img/person1.jpg" alt="" class="circle">
+                            </a>
+                            <a href="#">
+                                <span class="name white-text">John Doe</span>
+                            </a>
+                            <a href="#">
+                                <span class="email white-text">jdoe@gmail.com</span>
+                            </a>
+                    <li class=""><a href="index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                    <li class=""><a href="posts.html">Posts</a></li>
+                    <li class=""><a href="catagories.html">Categories</a></li>
+                    <li class=""><a href="comments.html">Comments</a></li>
+                    <li class=""><a href="users.html">Users</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="subheader center">Account Controls</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="waves-effect">logout</a>
+                    </li>
+            </div>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- Section: Posts -->
+    <section class="section section-posts grey lighten-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Posts</span>
+                            <table class="striped">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Category</th>
+                                        <th>Date Created</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Post One</td>
+                                        <td>Web Development</td>
+                                        <td>January 1, 2019</td>
+                                        <td>
+                                            <a href="details.html" class="btn blue lighten-2">Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post Two</td>
+                                        <td>Graphic Design</td>
+                                        <td>January 2, 2019</td>
+                                        <td>
+                                            <a href="details.html" class="btn blue lighten-2">Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post three</td>
+                                        <td>Web Development</td>
+                                        <td>January 4, 2019</td>
+                                        <td>
+                                            <a href="details.html" class="btn blue lighten-2">Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post Four</td>
+                                        <td>Integration API</td>
+                                        <td>January 4, 2019</td>
+                                        <td>
+                                            <a href="details.html" class="btn blue lighten-2">Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post Five</td>
+                                        <td>Integration API</td>
+                                        <td>January 5, 2019</td>
+                                        <td>
+                                            <a href="details.html" class="btn blue lighten-2">Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post Six</td>
+                                        <td>Graphic Design</td>
+                                        <td>January 6, 2019</td>
+                                        <td>
+                                            <a href="details.html" class="btn blue lighten-2">Details</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-action">
+                            <ul class="pagination">
+                                <li class="disabled">
+                                    <a href="#!" class="blue-text">
+                                        <i class="material-icons">chevron_left</i>
+                                    </a>
+                                </li>
+                                <li class="active blue lighten-2 center">
+                                    <a href="#!" class="white-text">1</a>
+                                </li>
+                                <li class="waves-effect">
+                                    <a href="#!" class="blue-text">2</a>
+                                </li>
+                                <li class="waves-effect">
+                                    <a href="#!" class="blue-text">3</a>
+                                </li>
+                                <li class="waves-effect">
+                                    <a href="#!" class="blue-text">4</a>
+                                </li>
+                                <li class="waves-effect">
+                                    <a href="#!" class="blue-text">5</a>
+                                </li>
+                                <li class="waves-effect">
+                                    <a href="#!" class="blue-text">6</a>
+                                </li>
+                                <li class="waves-effect">
+                                    <a href="#!" class="blue-text">
+                                        <i class="material-icons">chevron_right</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section blue darken-2 white-text center">
+        <p>Madmin Corp Copyright &copy; 2019</p>
+    </footer>
+    <!-- Fixe action button -->
+    <div class="fixed-action-btn">
+        <a href="#post-modal" class="modal-trigger btn-floating btn-large red">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+    <!-- Modals -->
+    <!-- Add Post Modal -->
+    <div id="post-modal" class="modal">
+        <div class="modal-content">
+            <h4 class="valign-wrapper blue-text"><i class="material-icons medium">add_comment</i> Add Post</h4>
+            <form>
+                <div class="input-field">
+                    <input type="text" id="title">
+                    <label for="title">Title</label>
+                </div>
+                <div class="input-field">
+                    <select>
+                        <option value="" disabled selected>Select Option</option>
+                        <option value="1">Web Development</option>
+                        <option value="2">Graphic Design</option>
+                        <option value="3">Tech Gadget</option>
+                        <option value="4">Other</option>
+                    </select>
+                    <label>Category</label>
+                </div>
+                <div class="input-field">
+                    <textarea name="body" id="body" class="materialize-textarea"></textarea>
+                    <label>Body</label>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close btn blue white-text">Submit</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Preloader-->
+    <div class="loader preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- JQuery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Materialize JS -->
+    <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <!-- Init Scripts Tags -->
+    <script>
+        // Hide all sections
+        $('.section').hide();
+
+        // hide preloader
+        setTimeout(function () {
+            $('.loader').fadeOut();
+        }, 1000)
+
+        // timeout
+        setTimeout(function () {
+            // target document elements
+            $(document).ready(function () {
+                // show section
+                $('.section').fadeIn();
+
+                // Custom and Init JQueries
+                // Init SideNav
+                $('.button-collapse').sideNav();
+
+                // Init Modal
+                $('.modal').modal();
+
+                // Init Select
+                $('select').material_select();
+
+            });
+        }, 1200)
+    </script>
+</body>
+
+</html>
